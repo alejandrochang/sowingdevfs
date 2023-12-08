@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 import SowingDevWord from './img/SowingDevWord.png';
 import AuthorPic from './img/meImg.png';
@@ -88,6 +87,7 @@ export default function Home() {
               <div className="col-sm-12">
                 <div className="pull-left mb-xs-24">
                   <Image
+                    style={{ marginRight: '20px'}}
                     className="inline-block image-small"
                     src={AuthorPic}
                     width={75}
@@ -125,50 +125,6 @@ export default function Home() {
             </div>
             <div className="row">
               <div className="col-md-8 col-sm-10">
-                <div className="progress-bars">
-                  <div className="progress progress-2 text-left mb32">
-                    <span className="title">Javascript</span>
-                    <div className="bar-holder">
-                      <div className="progress-bar" data-progress="95"></div>
-                    </div>
-                  </div>
-                  <div className="progress progress-2 text-left mb32">
-                    <span className="title">React</span>
-                    <div className="bar-holder">
-                      <div className="progress-bar" data-progress="95"></div>
-                    </div>
-                  </div>
-                  <div className="progress progress-2 text-left mb32">
-                    <span className="title">Node.js</span>
-                    <div className="bar-holder">
-                      <div className="progress-bar" data-progress="85"></div>
-                    </div>
-                  </div>
-                  <div className="progress progress-2 text-left mb32">
-                    <span className="title">HTML</span>
-                    <div className="bar-holder">
-                      <div className="progress-bar" data-progress="85"></div>
-                    </div>
-                  </div>
-                  <div className="progress progress-2 text-left mb32">
-                    <span className="title">CSS</span>
-                    <div className="bar-holder">
-                      <div className="progress-bar" data-progress="85"></div>
-                    </div>
-                  </div>
-                  <div className="progress progress-2 text-left mb32">
-                    <span className="title">Next.js</span>
-                    <div className="bar-holder">
-                      <div className="progress-bar" data-progress="75"></div>
-                    </div>
-                  </div>
-                  <div className="progress progress-2 text-left mb32">
-                    <span className="title">Full stack Web Fundamentals</span>
-                    <div className="bar-holder">
-                      <div className="progress-bar" data-progress="95"></div>
-                    </div>
-                  </div>
-                </div>
                 <p className="lead fade-half mb40 mb-xs-24">
                   Heres what you can expect from our mentorship journey:
                 </p>
@@ -239,20 +195,10 @@ export default function Home() {
                   <div className="mb40 mb-xs-24">
                     <ul>
                       <li>
-                        <a href="https://www.linkedin.com/in/alejandro-chang/" target="_blank" rel="noopener noreferrer">
-                          <h6 className="uppercase">
-                          <svg style={{ fill: '#ededee' }} xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                            <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-                          </svg>&nbsp;&nbsp; LinkedIn
-                          </h6>
-                        </a>
+                        <a href="https://www.linkedin.com/in/alejandro-chang/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                       </li>
                       <li>
-                        <a href="https://www.alejandrochang.com" target="_blank" rel="noopener noreferrer">
-                          <h6 className="uppercase">
-                            <i className="ti-dribbble">&nbsp;</i> Personal Website
-                          </h6>
-                        </a>
+                        <a href="https://www.alejandrochang.com" target="_blank" rel="noopener noreferrer">Personal Website</a>
                       </li>
                     </ul>
                   </div>
@@ -265,7 +211,13 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col-md-3 col-sm-6">
-                <img alt="Logo" className="logo" src="img/SowingDevWord.png" />
+                <Image
+                  className="logo logo-light"
+                  src={SowingDevWord}
+                  width={50}
+                  height={50}
+                  alt="SowingDev Logo"
+                />
               </div>
             </div>
             <div className="row">
@@ -298,7 +250,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <a className="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
         </footer>
       </div>
     </div>
