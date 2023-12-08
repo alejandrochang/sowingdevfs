@@ -27,9 +27,7 @@ function Copyright(props: any) {
   );
 }
 
-// TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
-
 export default function SignIn() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -54,7 +52,6 @@ export default function SignIn() {
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            {/* <LockOutlinedIcon /> */}
           </Avatar>
           <Typography component="h1" variant="h5">
             Sign in
@@ -85,6 +82,7 @@ export default function SignIn() {
               label="Remember me"
             />
             <Button
+              style={{ backgroundColor: '#648142' }}
               type="submit"
               fullWidth
               variant="contained"
@@ -94,7 +92,7 @@ export default function SignIn() {
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
+                <Link href="/password-reset" variant="body2">
                   Forgot password?
                 </Link>
               </Grid>

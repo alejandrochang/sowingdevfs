@@ -24,7 +24,6 @@ body {
 /*!
 // Contents
 // ------------------------------------------------
-
  1. Global Styles
  2. Mixins
  3. Typography
@@ -35,7 +34,6 @@ body {
  8. Tooltips
  9. Alerts
  10. Icons
- 11. Forms
  12. Accordions
  13. Tabs
  14. Progress Bars
@@ -869,164 +867,6 @@ footer.bg-dark li,
     transform: none !important;
     -webkit-transform: none !important;
   }
-}
-
-/*!---------- 6. BUTTONS ----------*/
-.btn {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 2px solid #13181d;
-  padding: 0 26px;
-  height: 40px;
-  min-width: 150px;
-  line-height: 36px;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 0;
-  color: #13181d;
-  text-align: center;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  margin-right: 8px;
-  margin-bottom: 24px;
-}
-
-.btn:last-child,
-.btn:last-of-type {
-  margin-right: 0;
-}
-
-.btn:hover {
-  background: #13181d;
-  color: #fff;
-}
-
-.btn-icon {
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  min-width: 0;
-  padding: 0;
-  line-height: 38px;
-}
-
-.btn-lg {
-  height: 50px;
-  line-height: 46px;
-  min-width: 200px;
-}
-
-.btn-icon.btn-lg {
-  width: 50px;
-  height: 50px;
-  line-height: 49px;
-  font-size: 24px;
-  min-width: 0;
-}
-
-.btn-icon.btn-sm {
-  width: 30px;
-  height: 30px;
-  line-height: 29px;
-  font-size: 13px;
-  min-width: 0;
-  padding: 0 0 0 1px !important;
-}
-
-.btn-sm {
-  height: 30px;
-  font-size: 11px;
-  line-height: 27px;
-  min-width: 0;
-}
-
-.btn-filled {
-  background: #13181d;
-  color: #fff;
-}
-
-.btn-white,
-.image-bg .btn,
-.image-bg .btn:visited {
-  color: #fff;
-  border-color: #fff;
-}
-
-.btn-white:hover,
-.image-bg .btn:hover,
-.image-bg .btn:visited:hover {
-  background: #fff;
-  color: #222;
-}
-
-.image-bg .btn.btn-filled,
-.image-bg .btn-filled:visited {
-  border-color: #13181d;
-}
-
-.image-bg .btn-filled:hover {
-  border-color: #fff;
-}
-
-.btn-rounded {
-  border-radius: 25px;
-}
-
-body.btn-rounded .btn {
-  border-radius: 25px !important;
-}
-
-.bg-light .btn {
-  border-color: #222;
-  color: #222;
-}
-
-.bg-light .btn:visited,
-.bg-light .btn:visited:hover {
-  color: #222;
-}
-
-.bg-light .btn-filled,
-.bg-light .btn-filled:visited {
-  color: #fff;
-}
-
-.btn:visited {
-  color: #13181d;
-}
-
-.btn-white:visited,
-.btn:visited:hover {
-  color: #fff;
-}
-
-.btn-white:visited:hover {
-  color: #222;
-}
-
-.btn-filled:visited {
-  color: #fff;
-}
-
-.btn.bg-dark {
-  color: #fff;
-  border-color: #292929;
-}
-
-.btn.bg-dark:hover {
-  background: #434343;
-}
-
-.bg-primary .btn {
-  color: #fff;
-  border-color: #fff;
-}
-
-.bg-primary .btn:hover {
-  background: #fff;
-  color: #13181d;
 }
 
 /*!---------- 7. NAVIGATION ----------*/
@@ -3999,11 +3839,6 @@ img {
   margin: 0;
 }
 
-.add-to-cart input[type="submit"] {
-  width: 160px;
-  margin: 0;
-}
-
 th,
 td {
   line-height: 24px !important;
@@ -4052,10 +3887,6 @@ td {
 .ratings-form input[type="text"]:first-child {
   width: 48%;
   margin-right: 2%;
-}
-
-.ratings-form input[type="submit"] {
-  width: 200px;
 }
 
 .product-thumb {
@@ -4576,11 +4407,6 @@ video {
   margin-bottom: 0;
 }
 
-.comments input[type="submit"] {
-  max-width: 25%;
-  float: right;
-}
-
 .masonry {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -4703,11 +4529,6 @@ video {
   .post-title h4 {
     top: 0;
     display: block;
-  }
-
-  .comments input[type="submit"] {
-    max-width: 100%;
-    float: none;
   }
 }
 
@@ -6493,10 +6314,6 @@ template {
   display: none;
 }
 
-a {
-  background-color: transparent;
-}
-
 a:active,
 a:hover {
   outline: 0;
@@ -6593,14 +6410,6 @@ button {
 button,
 select {
   text-transform: none;
-}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
 }
 
 button[disabled],
@@ -8433,7 +8242,6 @@ pre code {
   font-size: inherit;
   color: inherit;
   white-space: pre-wrap;
-  background-color: transparent;
   border-radius: 0;
 }
 
@@ -9416,10 +9224,6 @@ pre code {
   .col-lg-offset-0 {
     margin-left: 0;
   }
-}
-
-table {
-  background-color: transparent;
 }
 
 caption {
@@ -10810,7 +10614,6 @@ fieldset[disabled] .btn-danger.active {
 .btn-link.active,
 .btn-link[disabled],
 fieldset[disabled] .btn-link {
-  background-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -10820,13 +10623,6 @@ fieldset[disabled] .btn-link {
 .btn-link:focus,
 .btn-link:active {
   border-color: transparent;
-}
-
-.btn-link:hover,
-.btn-link:focus {
-  color: #23527c;
-  text-decoration: underline;
-  background-color: transparent;
 }
 
 .btn-link[disabled]:hover,
@@ -10868,12 +10664,6 @@ fieldset[disabled] .btn-link:focus {
 
 .btn-block+.btn-block {
   margin-top: 5px;
-}
-
-input[type="submit"].btn-block,
-input[type="reset"].btn-block,
-input[type="button"].btn-block {
-  width: 100%;
 }
 
 .fade {
@@ -11004,15 +10794,6 @@ tbody.collapse.in {
 .dropdown-menu>.disabled>a:hover,
 .dropdown-menu>.disabled>a:focus {
   color: #777;
-}
-
-.dropdown-menu>.disabled>a:hover,
-.dropdown-menu>.disabled>a:focus {
-  text-decoration: none;
-  cursor: not-allowed;
-  background-color: transparent;
-  background-image: none;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
 .open>.dropdown-menu {
@@ -11497,14 +11278,6 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   color: #777;
 }
 
-.nav>li.disabled>a:hover,
-.nav>li.disabled>a:focus {
-  color: #777;
-  text-decoration: none;
-  cursor: not-allowed;
-  background-color: transparent;
-}
-
 .nav .open>a,
 .nav .open>a:hover,
 .nav .open>a:focus {
@@ -11868,7 +11641,6 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   margin-top: 8px;
   margin-right: 15px;
   margin-bottom: 8px;
-  background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -11911,7 +11683,6 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
     float: none;
     width: auto;
     margin-top: 0;
-    background-color: transparent;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -12113,7 +11884,6 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: #5e5e5e;
-  background-color: transparent;
 }
 
 .navbar-default .navbar-text {
@@ -12127,7 +11897,6 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
   color: #333;
-  background-color: transparent;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -12141,7 +11910,6 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 .navbar-default .navbar-nav>.disabled>a:hover,
 .navbar-default .navbar-nav>.disabled>a:focus {
   color: #ccc;
-  background-color: transparent;
 }
 
 .navbar-default .navbar-toggle {
@@ -12177,7 +11945,6 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
     color: #333;
-    background-color: transparent;
   }
 
   .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
@@ -12191,7 +11958,6 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:focus {
     color: #ccc;
-    background-color: transparent;
   }
 }
 
@@ -12231,7 +11997,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
   color: #fff;
-  background-color: transparent;
 }
 
 .navbar-inverse .navbar-text {
@@ -12245,7 +12010,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav>li>a:hover,
 .navbar-inverse .navbar-nav>li>a:focus {
   color: #fff;
-  background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav>.active>a,
@@ -12259,7 +12023,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav>.disabled>a:hover,
 .navbar-inverse .navbar-nav>.disabled>a:focus {
   color: #444;
-  background-color: transparent;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -12303,7 +12066,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus {
     color: #fff;
-    background-color: transparent;
   }
 
   .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a,
@@ -12317,7 +12079,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a:focus {
     color: #444;
-    background-color: transparent;
   }
 }
 
@@ -14517,7 +14278,6 @@ button.close {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
-  background-color: transparent;
   border: 0;
 }
 
