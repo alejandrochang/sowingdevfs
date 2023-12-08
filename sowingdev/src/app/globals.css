@@ -1087,6 +1087,7 @@ nav .btn,
   max-height: 55px;
   line-height: 53px;
   border-bottom: 1px solid #ccc;
+  background: black;
 }
 
 .nav-bar .module,
