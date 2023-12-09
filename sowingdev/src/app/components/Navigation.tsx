@@ -5,11 +5,10 @@ import SowingDevWord from '../img/SowingDevWord.png';
 const Navigation: React.FC = () => {
   return (
     <div className="nav-container">
-      <a id="top"></a>
       <nav className="absolute transparent">
         <div className="nav-bar">
           <div className="module left">
-            <a href="index.html">
+            <a href="/">
               <Image
                 className="logo logo-light"
                 src={SowingDevWord}
@@ -26,22 +25,22 @@ const Navigation: React.FC = () => {
             <div className="module left">
               <ul className="menu">
                 <li>
-                  <a href="#what_is_sowing_dev">
-                    What is Sowing Dev?
+                  <a href="/">
+                    Home
                   </a>
                 </li>
                 <li>
-                  <a href="#meet_your_mentor">
-                    Meet your mentor
+                  <a href="/signup">
+                    Signup
                   </a>
                 </li>
                 <li>
-                  <a href="#what_it_cost">
-                    What it Cost?
+                  <a href="/signin">
+                    Login
                   </a>
                 </li>
                 <li>
-                  <a href="#contact">
+                  <a href="/#contact">
                     Contact
                   </a>
                 </li>
