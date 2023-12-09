@@ -3,7 +3,6 @@ import * as React from 'react';
 import Image from 'next/image';
 import { Button, CssBaseline, TextField, Link, Box, Typography, Container } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Navigation from '../components/Navigation';
 import SowingDevWord from '../img/SowingDevWord.png';
 
 function Copyright(props: any) {
@@ -32,7 +31,6 @@ export default function PasswordReset() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Navigation />
       <Container>
         <CssBaseline />
         <Box

@@ -2,7 +2,6 @@
 import * as React from 'react';
 import { Avatar, Button, CssBaseline, TextField, FormControlLabel, Checkbox, Link, Grid, Box, Typography, Container } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Navigation from '../components/Navigation';
 
 function Copyright(props: any) {
   return (
@@ -32,7 +31,6 @@ function SignUp() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Navigation />
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
