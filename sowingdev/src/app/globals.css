@@ -71,6 +71,13 @@ body {
   overflow-x: hidden;
 }
 
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body.boxed-layout {
   background: #eee;
 }
@@ -6288,7 +6295,6 @@ figure,
 footer,
 header,
 hgroup,
-main,
 menu,
 nav,
 section,

@@ -30,6 +30,7 @@ function SignUp() {
   };
 
   return (
+    <div className="main">
     <ThemeProvider theme={defaultTheme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
@@ -118,6 +119,7 @@ function SignUp() {
         <Copyright sx={{ mt: 5 }} />
       </Container>
     </ThemeProvider>
+    </div>
   );
 }
 
