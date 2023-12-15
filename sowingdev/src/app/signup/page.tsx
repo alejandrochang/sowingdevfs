@@ -9,7 +9,8 @@ import { useRouter } from 'next/navigation';
 const defaultTheme = createTheme();
 
 function SignUp() {
-  const [error, activateError] = useState<boolean>(false);
+  const [error, setActiveError] = useState<boolean>(false);
+  const [userExistsError, setUserExistsError] = useState<boolean>(false);
   const defaultFormState = { email: '', password: '', firstName: '', lastName: ''};
   const [formValues, setFormValues] = useState(defaultFormState);
   const router = useRouter();
@@ -19,6 +20,20 @@ function SignUp() {
     const { email, password, firstName, lastName } = formValues;
 
     try {
+      const response = await fetch('api/register/userExists', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      })
+
+      const { user } = await response.json();
+      if (user) {
+        setUserExistsError(true);
+        return;
+      }
+
       const res = await fetch('api/register', {
         method: "POST",
         headers: {
@@ -31,24 +46,27 @@ function SignUp() {
         setFormValues(defaultFormState);
         router.push('/exams');
       } else {
-        activateError(true);
+        setActiveError(true);
       }
     } catch (error) {
       console.log("Error during registration. Please try again");
-      activateError(true);
+      setActiveError(true);
     }
   };
 
+  const errorText = error ? 'User Registration Failed. Please try again!' : 'User account already exists!';
+  const callbackError = error ? setActiveError : setUserExistsError;
   return (
     <div className="main">
     <ThemeProvider theme={defaultTheme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box sx={BoxStyle}>
-          {error && <Alert
-            onClose={() => activateError(false)}
+          {(error || userExistsError) && <Alert
+            onClose={() => callbackError(false)}
             severity="error"
-            sx={AlertStyle}>User Registration Failed. Please try again!
+            sx={AlertStyle}>
+            {errorText}
           </Alert>}
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
           </Avatar>
