@@ -68,7 +68,7 @@ function SignUp() {
             sx={AlertStyle}>
             {errorText}
           </Alert>}
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+          <Avatar sx={{ m: 1, bgcolor: '#242631' }}>
           </Avatar>
           <Typography component="h1" variant="h5">
             Sign up
@@ -127,7 +127,7 @@ function SignUp() {
               </Grid>
             </Grid>
             <Button
-              style={{ backgroundColor: '#648142' }}
+              style={{ backgroundColor: '#6AA761' }}
               type="submit"
               fullWidth
               variant="contained"

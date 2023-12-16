@@ -14,7 +14,8 @@ const Navigation: React.FC = () => {
                 src={SowingDevWord}
                 width={200}
                 height={100}
-                alt="SowingDev Logo"
+                alt="Sowing Dev Logo"
+                style={{ borderRadius: '5px'}}
               />
             </a>
           </div>
