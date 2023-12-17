@@ -1,17 +1,41 @@
 'use client';
-import * as React from 'react';
-import { Avatar, Button, CssBaseline, TextField, FormControlLabel, Checkbox, Link, Grid, Box, Typography, Container } from '@mui/material';
+
+import { useState } from 'react';
+import { Avatar, Button, CssBaseline, TextField, FormControlLabel, Checkbox, Link, Grid, Box, Typography, Container, Alert } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Copyright from '../components/Copyright';
+import { signIn } from 'next-auth/react';
+import { useRouter } from 'next/router';
 
 const defaultTheme = createTheme();
 export default function SignIn() {
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const [error, setError] = useState<boolean>(false);
+  const router = useRouter();
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
     const data = new FormData(event.currentTarget);
     const email = data.get('email');
     const password = data.get('password');
-    console.log({ email, password });
+
+    try {
+      const response = await signIn('credentials', {
+        email,
+        password,
+        redirect: false,
+      });
+
+      if (response?.error) {
+        setError(true);
+        return;
+      }
+
+      router.replace('exams');
+    } catch (e) {
+      console.log(`Error: ${e}`);
+    }
+
+    
   };
 
   return (
@@ -27,7 +51,13 @@ export default function SignIn() {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+          {error && <Alert
+            onClose={() => setError(false)}
+            severity="error"
+            sx={AlertStyle}>
+            {'Invalid Credentials'}
+          </Alert>}
+          <Avatar sx={{ m: 1, bgcolor: '#242631' }}>
           </Avatar>
           <Typography component="h1" variant="h5">
             Sign in
@@ -85,4 +115,6 @@ export default function SignIn() {
     </ThemeProvider>
     </div>
   );
-}
+};
+
+const AlertStyle = { width: '100%', alignItems: 'center', marginBottom: '20px' };
