@@ -30,7 +30,7 @@ export default function SignIn() {
         return;
       }
 
-      router.replace('exams');
+      router.replace('curriculum');
     } catch (e) {
       console.log(`Error: ${e}`);
     }

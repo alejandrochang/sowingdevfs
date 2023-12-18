@@ -44,7 +44,7 @@ function SignUp() {
 
       if (res.ok) {
         setFormValues(defaultFormState);
-        router.push('/exams');
+        router.push('/curriculum');
       } else {
         setActiveError(true);
       }
