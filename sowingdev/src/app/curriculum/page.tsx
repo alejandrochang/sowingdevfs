@@ -1,3 +1,3 @@
 export default function Curriculum() {
-  return <div>Curriculum</div>
+  return <div className="main">Curriculum</div>
 }
