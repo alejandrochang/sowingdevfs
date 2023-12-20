@@ -34,8 +34,6 @@ export default function SignIn() {
     } catch (e) {
       console.log(`Error: ${e}`);
     }
-
-    
   };
 
   return (

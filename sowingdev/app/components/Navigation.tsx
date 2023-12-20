@@ -1,8 +1,20 @@
 'use client';
+
 import Image from 'next/image';
 import SowingDevWord from '../img/SowingDevWord.png';
+import { signOut, useSession } from "next-auth/react"
 
 const Navigation: React.FC = () => {
+  const { data: session, status } = useSession();
+  const sessionText = status === 'authenticated' ? 'Logout' : 'Login';
+  const linkStyle = status === 'authenticated' ? {color: '#ea4545'} : {};
+  const handleSignOut = async () => {
+    if (status === 'authenticated') {
+      await signOut({ callbackUrl: '/signin' });
+      return;
+    } 
+  }
+
   return (
     <div className="nav-container">
       <nav className="absolute transparent">
@@ -31,18 +43,18 @@ const Navigation: React.FC = () => {
                   </a>
                 </li>
                 <li>
+                  <a href="/#contact">
+                    Contact
+                  </a>
+                </li>
+                <li>
                   <a href="/signup">
                     Signup
                   </a>
                 </li>
-                <li>
-                  <a href="/signin">
-                    Login
-                  </a>
-                </li>
-                <li>
-                  <a href="/#contact">
-                    Contact
+                <li onClick={handleSignOut}>
+                  <a href="/signin" style={linkStyle}>
+                    {sessionText}
                   </a>
                 </li>
               </ul>
