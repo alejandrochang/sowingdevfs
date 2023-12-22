@@ -10,11 +10,8 @@ const defaultTheme = createTheme();
 export default function PasswordReset() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+    // Do something with data
+    // const data = new FormData(event.currentTarget); data.get('email')
   };
 
   const CardStyle = {
