@@ -24,15 +24,17 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Authors and Acknowledgement
+Many thanks to all who have contributed and continue to contribute to the SowingDev mentorship and ecosystem.
+
 ## Deployment (Vercel)
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
 
 Deployment:
 The App is currently live and deployed at: https://sowingdev.vercel.app/ We are currently using Vercel for deployment purposes.
 
-Github:
+The repo can be found here:
+(Github)
 https://github.com/alejandrochang/sowingdevfs/tree/main/sowingdev
+
+1. Request permissions for repo or ask main owner to add you via email
+2. Clone the repo
