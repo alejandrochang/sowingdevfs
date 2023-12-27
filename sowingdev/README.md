@@ -18,7 +18,7 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file. This Next.js app uses dynamic routing. To understand the page strucutre read these docs: 
-1. [Next.js Documentation](https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes).
+1. [Next.js Dynamic Routing](https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes).
 2. [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 3. [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
@@ -38,3 +38,11 @@ https://github.com/alejandrochang/sowingdevfs/tree/main/sowingdev
 
 1. Request permissions for repo or ask main owner to add you via email
 2. Clone the repo
+
+## Roadmap
+The project is a continous process of adding different resources, tools and code examples that can be used to improve technical, organizational and engineering skills as a whole. 
+
+### 2024
+1. Navigation Layout that will allow our users to access common algorithms to prepare for Interview Processes
+2. Resume Options for our members + LinkedIn Review sessions with mentors. This will allow for personal feedback on how to improve your LinkedIn persona, your resume when targetting specific companies and roles.
+3. Fundamentals Section: JavaScript, HTML, CSS, React, Server(APIs and Promises), Frontend Technologies: Browser, DOM, Events and Data, Browser Storage, Databases: SQL and MongoDB
