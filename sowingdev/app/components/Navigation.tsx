@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import SowingDevWord from '../img/SowingDevWord.png';
-import { useSession } from "next-auth/react"
+import { useSession } from 'next-auth/react';
 
 const Navigation: React.FC = () => {
   const { status } = useSession();
@@ -19,7 +19,7 @@ const Navigation: React.FC = () => {
                 width={200}
                 height={100}
                 alt="Sowing Dev Logo"
-                style={{ borderRadius: '5px'}}
+                style={{ borderRadius: '5px' }}
               />
             </a>
           </div>
@@ -30,37 +30,28 @@ const Navigation: React.FC = () => {
             <div className="module left">
               <ul className="menu">
                 <li>
-                  <a href="/">
-                    Home
-                  </a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="/#contact">
-                    Contact
-                  </a>
+                  <a href="/#contact">Contact</a>
                 </li>
-                {
-                  status !== 'authenticated' && 
+                {status !== 'authenticated' && (
                   <>
                     <li>
-                      <a href="/signup">
-                        Signup
-                        </a>
+                      <a href="/signup">Signup</a>
                     </li>
                     <li>
-                      <a href="/signin">
-                        {'Login'}
-                      </a>
+                      <a href="/signin">{'Login'}</a>
                     </li>
                   </>
-                }
+                )}
               </ul>
             </div>
           </div>
         </div>
       </nav>
     </div>
-  )
-}
+  );
+};
 
 export default Navigation;

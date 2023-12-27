@@ -1,4 +1,3 @@
-import Navigation from './components/Navigation';
 import Homepage from './components/Home';
 
 export default function App() {
@@ -6,5 +5,5 @@ export default function App() {
     <div className="scroll-assist">
       <Homepage />
     </div>
-  )
+  );
 }

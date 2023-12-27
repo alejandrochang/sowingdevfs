@@ -1,14 +1,14 @@
-import { connectMongoDB } from "@/lib/mongodb";
-import type { NextAuthOptions } from "next-auth";
-import CredentialsProvider from "next-auth/providers/credentials";
-import bcrypt from "bcryptjs";
-import User from "@/models/user";
+import { connectMongoDB } from '@/lib/mongodb';
+import type { NextAuthOptions } from 'next-auth';
+import CredentialsProvider from 'next-auth/providers/credentials';
+import bcrypt from 'bcryptjs';
+import User from '@/models/user';
 
 export const options: NextAuthOptions = {
   providers: [
     // Add additional providers: Github, Google Providers etc..
     CredentialsProvider({
-      name: "credentials",
+      name: 'credentials',
       credentials: {},
       async authorize(credentials: any) {
         const { email, password } = credentials;
@@ -29,16 +29,16 @@ export const options: NextAuthOptions = {
 
           return user;
         } catch (error) {
-          console.log("Error: ", error);
+          console.log('Error: ', error);
         }
       },
     }),
-    ],
-    pages: {
-      signIn:"/signin"  
-    },
+  ],
+  pages: {
+    signIn: '/signin',
+  },
   session: {
-    strategy: "jwt",
+    strategy: 'jwt',
   },
   events: {},
   jwt: {
