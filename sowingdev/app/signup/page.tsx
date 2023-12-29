@@ -36,7 +36,7 @@ function SignUp() {
     const { email, password, firstName, lastName } = formValues;
 
     try {
-      const response = await fetch('api/register/userExists', {
+      const response = await fetch('api/userExists', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
