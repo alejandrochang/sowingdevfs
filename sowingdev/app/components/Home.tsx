@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import SowingDevWord from '../img/SowingDevWord.png';
+import SowingDevLogo from '../img/SowingDevBlack.png';
 import AuthorPic from '../img/meImg.png';
 
 const Home: React.FC = () => {
@@ -214,7 +214,7 @@ const Home: React.FC = () => {
             <div className="col-md-3 col-sm-6">
               <Image
                 className="logo logo-light"
-                src={SowingDevWord}
+                src={SowingDevLogo}
                 width={50}
                 height={50}
                 alt="SowingDev Logo"

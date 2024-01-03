@@ -670,7 +670,7 @@ ul.lead li {
 
 /*!---------- 4. COLOURS ----------*/
 .bg-primary {
-  background: #242631 !important;
+  background: #525a60 !important;
 }
 
 .bg-secondary {
@@ -934,7 +934,7 @@ nav .btn,
   max-height: 55px;
   line-height: 53px;
   border-bottom: 1px solid #ccc;
-  background: black;
+  background: #202021;
 }
 
 .nav-bar .module,
