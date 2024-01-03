@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { signOut } from 'next-auth/react';
-import SowingDevWord from '../img/SowingDevWord.png';
+import SowingDevLogo from '../img/sowingDevWhite.png';
 import {
   Box,
   CssBaseline,
@@ -57,7 +57,7 @@ export default function Curriculum() {
         sx={{
           width: `calc(100% - ${drawerWidth}px)`,
           ml: `${drawerWidth}px`,
-          backgroundColor: 'black',
+          backgroundColor: '#202021',
         }}
       >
         <Toolbar>
@@ -87,12 +87,12 @@ export default function Curriculum() {
         variant="permanent"
         anchor="left"
       >
-        <Toolbar>
+        <Toolbar sx={{ justifyContent: 'center' }}>
           <a href="/">
             <Image
               className="logo"
-              src={SowingDevWord}
-              width={200}
+              src={SowingDevLogo}
+              width={100}
               height={100}
               alt="Sowing Dev Logo"
               style={{ borderRadius: '5px' }}

@@ -11,7 +11,7 @@ import {
   CardContent,
 } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import SowingDevWord from '../img/SowingDevWord.png';
+import SowingDevLogo from '../img/SowingDevBlack.png';
 import Copyright from '../components/Copyright';
 
 const defaultTheme = createTheme();
@@ -48,7 +48,7 @@ export default function PasswordReset() {
                   marginRight: '20px',
                   borderRadius: '8px',
                 }}
-                src={SowingDevWord}
+                src={SowingDevLogo}
                 width={200}
                 height={100}
                 alt="Sowing Dev Logo"

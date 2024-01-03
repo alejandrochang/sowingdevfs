@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import SowingDevWord from '../img/SowingDevWord.png';
+import SowingDevLogo from '../img/SowingDevBlack.png';
 import { useSession } from 'next-auth/react';
 
 const Navigation: React.FC = () => {
@@ -15,8 +15,8 @@ const Navigation: React.FC = () => {
             <a href="/">
               <Image
                 className="logo logo-light"
-                src={SowingDevWord}
-                width={200}
+                src={SowingDevLogo}
+                width={100}
                 height={100}
                 alt="Sowing Dev Logo"
                 style={{ borderRadius: '5px' }}
