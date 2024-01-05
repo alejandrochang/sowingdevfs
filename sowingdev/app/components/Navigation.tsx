@@ -14,7 +14,7 @@ const Navigation: React.FC = () => {
           <div className="module left">
             <a href="/">
               <Image
-                className="logo logo-light"
+                className="logo"
                 src={SowingDevLogo}
                 width={100}
                 height={100}

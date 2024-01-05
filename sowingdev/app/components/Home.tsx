@@ -213,7 +213,7 @@ const Home: React.FC = () => {
           <div className="row">
             <div className="col-md-3 col-sm-6">
               <Image
-                className="logo logo-light"
+                className="logo"
                 src={SowingDevLogo}
                 width={50}
                 height={50}
