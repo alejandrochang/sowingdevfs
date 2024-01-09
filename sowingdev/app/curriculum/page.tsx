@@ -18,27 +18,18 @@ import {
   ListItemIcon,
   ListItemText,
 } from '@mui/material';
-import { People } from '@mui/icons-material';
 import HomeIcon from '@mui/icons-material/Home';
 import LanguageIcon from '@mui/icons-material/Language';
 import HtmlIcon from '@mui/icons-material/Html';
 import JavascriptIcon from '@mui/icons-material/Javascript';
 import CodeIcon from '@mui/icons-material/Code';
 import StorageIcon from '@mui/icons-material/Storage';
-import { listItems } from './contentData';
+import Content from './Content';
 
 const drawerWidth = 240;
 
 export default function Curriculum() {
   const [pageState, setPageState] = useState<string>('Overview');
-  /*
-    Todos @juan.espinoza
-    1. Research state handling in React - Understand how state can be used with JavaScript, HTLM, CSS (JSX)
-        a. Link: https://react.dev/learn/updating-objects-in-state
-    2. Add State for the SideNavigation that will allow different children to be used. Example: If I click on 
-       one of these sections on the left it should be able to change the content on the right side
-  */
-
   const navigationitems = [
     { text: 'Overview', icon: <HomeIcon /> },
     { text: 'Web Fundamentals', icon: <LanguageIcon /> },
@@ -135,37 +126,7 @@ export default function Curriculum() {
         component="main"
         sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
       >
-        <Toolbar />
-        <Typography variant="h2" gutterBottom>
-          Overview
-        </Typography>
-        <Typography variant="subtitle1" gutterBottom>
-          This course contains 15 sections:
-        </Typography>
-        <div>
-          {listItems.map(({ title }, idx) => {
-            return (
-              <Typography key={title} gutterBottom>{`${
-                idx + 1
-              }. ${title}`}</Typography>
-            );
-          })}
-        </div>
-        <br />
-        <Divider />
-        <br />
-        <div>
-          {listItems.map(({ title, content }, idx) => {
-            return (
-              <>
-                <Typography variant="h4" key={title} gutterBottom>
-                  {title}
-                </Typography>
-                <Typography paragraph>{content}</Typography>
-              </>
-            );
-          })}
-        </div>
+        <Content />
       </Box>
     </Box>
   );
