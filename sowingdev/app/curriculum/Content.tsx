@@ -3,9 +3,9 @@ import React from 'react';
 import { listItems } from './contentData';
 import { Toolbar, Typography, Divider } from '@mui/material';
 
-interface ContentProps {}
+interface ContentProps { pageState: string };
 
-const Content: React.FC<ContentProps> = () => {
+const Content: React.FC<ContentProps> = ({ pageState }) => {
   return (
     <div>
       <Toolbar />

@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { signOut } from 'next-auth/react';
+import { navigationitems, advancedNavigationItems } from '@/lib/constants';
+
 import SowingDevLogo from '../img/sowingDevWhite.png';
 import {
   Box,
@@ -18,27 +20,16 @@ import {
   ListItemIcon,
   ListItemText,
 } from '@mui/material';
-import HomeIcon from '@mui/icons-material/Home';
-import LanguageIcon from '@mui/icons-material/Language';
-import HtmlIcon from '@mui/icons-material/Html';
-import JavascriptIcon from '@mui/icons-material/Javascript';
-import CodeIcon from '@mui/icons-material/Code';
-import StorageIcon from '@mui/icons-material/Storage';
 import Content from './Content';
 
 const drawerWidth = 240;
 
 export default function Curriculum() {
   const [pageState, setPageState] = useState<string>('Overview');
-  const navigationitems = [
-    { text: 'Overview', icon: <HomeIcon /> },
-    { text: 'Web Fundamentals', icon: <LanguageIcon /> },
-    { text: 'HTML & CSS', icon: <HtmlIcon /> },
-    { text: 'JavaScript', icon: <JavascriptIcon /> },
-    { text: 'React', icon: <CodeIcon /> },
-    { text: 'Servers', icon: <StorageIcon /> },
-    { text: 'FE Technologies', icon: <CodeIcon /> },
-  ];
+
+  const handleNavChange = (e: any) => {
+    setPageState(e.target.innerText);
+  };
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -92,31 +83,27 @@ export default function Curriculum() {
         </Toolbar>
         <Divider />
         <List sx={{ padding: '8px 20px 8px 20px' }}>
-          {navigationitems.map(({ text, icon }, index) => (
-            <ListItem key={text} disablePadding>
+          {navigationitems.map(({ text }, index) => (
+            <ListItem key={text} disablePadding onClick={handleNavChange}>
               <ListItemButton>
-                <ListItemIcon sx={{ minWidth: '30px' }}>{icon}</ListItemIcon>
-                <ListItemText primary={text} />
+                <ListItemText
+                  primary={text}
+                  primaryTypographyProps={listItemFont}
+                />
               </ListItemButton>
             </ListItem>
           ))}
         </List>
         <Divider />
         <List>
-          {[
-            'Algorithms',
-            'Resume Review',
-            'Interview Preparation',
-            'Resources',
-            'Intermediate HTML/CSS',
-            'Intermediate React',
-            'Intermediate Next.js',
-            'Advanced Frontend Concepts',
-          ].map((text, index) => (
+          {advancedNavigationItems.map((text, index) => (
             <ListItem key={text} disablePadding disabled>
               <ListItemButton>
                 <ListItemIcon></ListItemIcon>
-                <ListItemText primary={text} />
+                <ListItemText
+                  primary={text}
+                  primaryTypographyProps={listItemFont}
+                />
               </ListItemButton>
             </ListItem>
           ))}
@@ -126,7 +113,7 @@ export default function Curriculum() {
         component="main"
         sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
       >
-        <Content />
+        <Content pageState={pageState} />
       </Box>
     </Box>
   );
@@ -138,3 +125,5 @@ const ContainerStyle = {
   width: '100%',
   alignItems: 'center',
 };
+
+const listItemFont = { fontSize: '12px' };
