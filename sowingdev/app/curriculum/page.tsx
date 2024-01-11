@@ -95,7 +95,7 @@ export default function Curriculum() {
           ))}
         </List>
         <Divider />
-        <List>
+        {/* <List>
           {advancedNavigationItems.map((text, index) => (
             <ListItem key={text} disablePadding disabled>
               <ListItemButton>
@@ -107,7 +107,7 @@ export default function Curriculum() {
               </ListItemButton>
             </ListItem>
           ))}
-        </List>
+        </List> */}
       </Drawer>
       <Box
         component="main"
