@@ -30,7 +30,7 @@ const Content: React.FC<ContentProps> = ({ pageState }) => {
   };
 
   return (
-    <div>
+    <div style={{ position: 'relative', top: '64px'}}>
       {navComponent()}
     </div>
   );

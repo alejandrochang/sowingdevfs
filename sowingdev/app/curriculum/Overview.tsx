@@ -8,12 +8,10 @@ interface OverviewProps {
 }
 
 const Overview: React.FC<OverviewProps> = (props) => {
-  // Implement the component logic here
   const itemsData = listItems.slice(0, 7);
 
   return (
     <div>
-      <Toolbar />
       <Typography gutterBottom>
         Welcome to the SowingDev Mentorship Program! We&apos;re delighted to
         have you embark on this journey of growth and knowledge with us. We are
