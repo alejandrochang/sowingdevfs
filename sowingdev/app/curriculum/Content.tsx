@@ -1,46 +1,37 @@
 import React from 'react';
-
-import { listItems } from './contentData';
-import { Toolbar, Typography, Divider } from '@mui/material';
+import Overview from './Overview';
+import ReactComponent from './React';
+import Javascript from './Javascript';
+import FETechnologies from './FETechnologies';
+import HtmlCss from './HtmlCss';
+import Servers from './Servers';
+import WebFundamentals from './WebFundamentals';
 
 interface ContentProps { pageState: string };
 
 const Content: React.FC<ContentProps> = ({ pageState }) => {
-  const itemsData = listItems.slice(0, 7);
+  const navComponent = () => {
+    switch (pageState) {
+      case 'React':
+        return <ReactComponent />;
+      case 'JavaScript':
+        return <Javascript />;
+      case 'Web Fundamentals':
+        return <WebFundamentals />;
+      case 'Servers':
+        return <Servers />;
+      case 'HTML & CSS':
+        return <HtmlCss />;
+      case 'FE Technologies':
+        return <FETechnologies />;
+      default:
+        return <Overview />;
+    }
+  };
+
   return (
-    <div>
-      <Toolbar />
-      <Typography variant="subtitle1" gutterBottom>
-        Welcome to the SowingDev Mentorship Program! We&apos;re delighted to have you embark on this journey of growth and knowledge with us. We are delighted to partner with you in your coding journey our community is dedicated to nurturing talent, fostering collaboration, and helping you thrive in the world of development. Together, we&apos;ll cultivate skills, reap the rewards of mentorship, and sow the seeds of excellence. Let&apos;s sow, grow, and succeed together!
-      </Typography>
-      <br />
-      <Typography variant="subtitle1" gutterBottom>
-        This course contains 7 main sections:
-      </Typography>
-      <div>
-        {itemsData.map(({ title }, idx) => {
-          return (
-            <Typography key={title} gutterBottom>{`${
-              idx + 1
-            }. ${title}`}</Typography>
-          );
-        })}
-      </div>
-      <br />
-      <Divider />
-      <br />
-      <div>
-        {itemsData.map(({ title, content }, idx) => {
-          return (
-            <>
-              <Typography variant="h4" key={title} gutterBottom>
-                {title}
-              </Typography>
-              <Typography paragraph>{content}</Typography>
-            </>
-          );
-        })}
-      </div>
+    <div style={{ position: 'relative', top: '64px'}}>
+      {navComponent()}
     </div>
   );
 };
