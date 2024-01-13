@@ -7,7 +7,9 @@ import HtmlCss from './HtmlCss';
 import Servers from './Servers';
 import WebFundamentals from './WebFundamentals';
 
-interface ContentProps { pageState: string };
+interface ContentProps {
+  pageState: string;
+}
 
 const Content: React.FC<ContentProps> = ({ pageState }) => {
   const navComponent = () => {
@@ -30,7 +32,13 @@ const Content: React.FC<ContentProps> = ({ pageState }) => {
   };
 
   return (
-    <div style={{ position: 'relative', top: '64px'}}>
+    <div
+      style={{
+        padding: '30px',
+        backgroundColor: ' #ffffff',
+        position: 'relative',
+      }}
+    >
       {navComponent()}
     </div>
   );
