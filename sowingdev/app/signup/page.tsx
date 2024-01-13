@@ -17,7 +17,13 @@ import Copyright from '../components/Copyright';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-const defaultTheme = createTheme();
+const defaultTheme = createTheme({
+  typography: {
+    body1: {
+      fontSize: '12px',
+    },
+  },
+});
 
 function SignUp() {
   const [error, setActiveError] = useState<boolean>(false);

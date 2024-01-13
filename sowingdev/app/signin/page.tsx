@@ -18,7 +18,14 @@ import Copyright from '../components/Copyright';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
-const defaultTheme = createTheme();
+const defaultTheme = createTheme({
+  typography: {
+    body1: {
+      fontSize: '12px',
+    },
+  },
+});
+
 export default function SignIn() {
   const [error, setError] = useState<boolean>(false);
   const router = useRouter();

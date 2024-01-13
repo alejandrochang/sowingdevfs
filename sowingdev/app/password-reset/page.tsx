@@ -14,7 +14,13 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import SowingDevLogo from '../img/SowingDevBlack.png';
 import Copyright from '../components/Copyright';
 
-const defaultTheme = createTheme();
+const defaultTheme = createTheme({
+  typography: {
+    body1: {
+      fontSize: '12px',
+    },
+  },
+});
 export default function PasswordReset() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
