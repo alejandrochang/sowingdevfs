@@ -12,7 +12,7 @@ const Overview: React.FC<OverviewProps> = (props) => {
 
   return (
     <div>
-      <Typography gutterBottom>
+      <Typography variant='body2' gutterBottom>
         Welcome to the SowingDev Mentorship Program! We&apos;re delighted to
         have you embark on this journey of growth and knowledge with us. We are
         delighted to partner with you in your coding journey our community is
@@ -22,13 +22,13 @@ const Overview: React.FC<OverviewProps> = (props) => {
         Let&apos;s sow, grow, and succeed together!
       </Typography>
       <br />
-      <Typography gutterBottom>
+      <Typography variant='body2' gutterBottom>
         This course contains 7 main sections:
       </Typography>
       <div>
         {itemsData.map(({ title }, idx) => {
           return (
-            <Typography key={title} gutterBottom>{`${
+            <Typography variant='body2' key={title} gutterBottom>{`${
               idx + 1
             }. ${title}`}</Typography>
           );
@@ -41,10 +41,10 @@ const Overview: React.FC<OverviewProps> = (props) => {
         {itemsData.map(({ title, content }, idx) => {
           return (
             <>
-              <Typography variant="h4" key={title} gutterBottom>
+              <Typography variant='body2' key={title} gutterBottom>
                 {title}
               </Typography>
-              <Typography paragraph>{content}</Typography>
+              <Typography variant='body2' paragraph>{content}</Typography>
             </>
           );
         })}

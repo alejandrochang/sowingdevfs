@@ -6,6 +6,8 @@ import { useSession } from 'next-auth/react';
 
 const Navigation: React.FC = () => {
   const { status } = useSession();
+  const isAuthenticated = status === 'authenticated';
+  const isLoading = status === 'loading';
 
   return (
     <div className="nav-container">
@@ -35,7 +37,7 @@ const Navigation: React.FC = () => {
                 <li>
                   <a href="/#contact">Contact</a>
                 </li>
-                {status !== 'authenticated' && (
+                {!isAuthenticated && !isLoading && (
                   <>
                     <li>
                       <a href="/signup">Signup</a>
@@ -44,6 +46,11 @@ const Navigation: React.FC = () => {
                       <a href="/signin">{'Login'}</a>
                     </li>
                   </>
+                )}
+                {isAuthenticated && !isLoading && (
+                  <li>
+                    <a href="/curriculum">Curriculum</a>
+                  </li>
                 )}
               </ul>
             </div>
