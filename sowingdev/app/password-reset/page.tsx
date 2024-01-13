@@ -11,7 +11,7 @@ import {
   CardContent,
 } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import SowingDevLogo from '../img/SowingDevBlack.png';
+import SowingDevLogo from '../img/sowingDevWhite.png';
 import Copyright from '../components/Copyright';
 
 const defaultTheme = createTheme({
@@ -32,6 +32,7 @@ export default function PasswordReset() {
     borderRadius: '8px',
     display: 'flex',
     justifyContent: 'center',
+    boxShadow: 'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px',
   };
 
   return (
@@ -60,7 +61,7 @@ export default function PasswordReset() {
                 alt="Sowing Dev Logo"
               />
               <br />
-              <Typography component="h1" variant="h5">
+              <Typography variant='body2'>
                 Please Enter your SowingDev associated Email:
               </Typography>
               <Box

@@ -17,7 +17,6 @@ import {
   List,
   ListItem,
   ListItemButton,
-  ListItemIcon,
   ListItemText,
 } from '@mui/material';
 import Content from './Content';
@@ -47,13 +46,6 @@ export default function Curriculum() {
             <Typography variant="h6" noWrap component="div">
               {pageState}
             </Typography>
-            <button
-              onClick={() => signOut()}
-              className="bg-red-500 text-white font-bold px-6 py-2 mt-3"
-              style={{ borderRadius: '5px' }}
-            >
-              Log Out
-            </button>
           </div>
         </Toolbar>
       </AppBar>
@@ -108,6 +100,17 @@ export default function Curriculum() {
             </ListItem>
           ))}
         </List> */}
+        <div style={LogoutContainer}>
+          <ListItemButton
+            style={{ position: 'absolute', bottom: '40px' }}
+            onClick={() => signOut()}
+          >
+            <ListItemText
+              primary="Logout"
+              primaryTypographyProps={listItemFont}
+            />
+          </ListItemButton>
+        </div>
       </Drawer>
       <Box
         component="main"
@@ -127,3 +130,9 @@ const ContainerStyle = {
 };
 
 const listItemFont = { fontSize: '12px' };
+
+const LogoutContainer = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
