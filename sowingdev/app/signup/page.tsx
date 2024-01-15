@@ -168,7 +168,7 @@ function SignUp() {
                 </Grid>
               </Grid>
               <Button
-                style={{ backgroundColor: '#6AA761' }}
+                style={ButtonStyle}
                 type="submit"
                 fullWidth
                 variant="contained"
@@ -192,16 +192,19 @@ function SignUp() {
   );
 }
 
-const AlertStyle = {
+const AlertStyle: React.CSSProperties = {
   width: '100%',
   alignItems: 'center',
   marginBottom: '20px',
 };
-const BoxStyle = {
+
+const BoxStyle: React.CSSProperties = {
   marginTop: 8,
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
 };
+
+const ButtonStyle: React.CSSProperties = { backgroundColor: '#6AA761' };
 
 export default SignUp;

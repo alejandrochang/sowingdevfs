@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import Overview from './Overview';
 import ReactComponent from './React';
 import Javascript from './Javascript';
@@ -31,17 +31,13 @@ const Content: React.FC<ContentProps> = ({ pageState }) => {
     }
   };
 
-  return (
-    <div
-      style={{
-        padding: '30px',
-        backgroundColor: ' #ffffff',
-        position: 'relative',
-      }}
-    >
-      {navComponent()}
-    </div>
-  );
+  const Container: CSSProperties = {
+    padding: '30px',
+    backgroundColor: ' #ffffff',
+    position: 'relative',
+  };
+
+  return <div style={Container}>{navComponent()}</div>;
 };
 
 export default Content;

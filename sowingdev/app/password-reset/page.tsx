@@ -27,12 +27,22 @@ export default function PasswordReset() {
     // Do something with data
   };
 
-  const CardStyle = {
+  const CardStyle: React.CSSProperties = {
     width: '600px',
     borderRadius: '8px',
     display: 'flex',
     justifyContent: 'center',
-    boxShadow: 'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px',
+    boxShadow:
+      'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px',
+  };
+
+  const ButtonStyle: React.CSSProperties = {
+    backgroundColor: 'rgb(233 30 30)',
+  };
+  const ImageStyle: React.CSSProperties = {
+    marginTop: '30px',
+    marginRight: '20px',
+    borderRadius: '8px',
   };
 
   return (
@@ -50,18 +60,14 @@ export default function PasswordReset() {
               }}
             >
               <Image
-                style={{
-                  marginTop: '30px',
-                  marginRight: '20px',
-                  borderRadius: '8px',
-                }}
+                style={ImageStyle}
                 src={SowingDevLogo}
                 width={200}
                 height={100}
                 alt="Sowing Dev Logo"
               />
               <br />
-              <Typography variant='body2'>
+              <Typography variant="body2">
                 Please Enter your SowingDev associated Email:
               </Typography>
               <Box
@@ -81,7 +87,7 @@ export default function PasswordReset() {
                   autoFocus
                 />
                 <Button
-                  style={{ backgroundColor: 'rgb(233 30 30)' }}
+                  style={ButtonStyle}
                   type="submit"
                   fullWidth
                   variant="contained"

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
   Avatar,
   Button,
@@ -53,6 +53,8 @@ export default function SignIn() {
       console.log(`Error: ${e}`);
     }
   };
+
+  const ButtonStyle: React.CSSProperties = { backgroundColor: '#6AA761' };
 
   return (
     <div className="main">
@@ -107,7 +109,7 @@ export default function SignIn() {
                 autoComplete="current-password"
               />
               <Button
-                style={{ backgroundColor: '#6AA761' }}
+                style={ButtonStyle}
                 type="submit"
                 fullWidth
                 variant="contained"
