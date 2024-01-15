@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { signOut } from 'next-auth/react';
 import { navigationitems, advancedNavigationItems } from '@/lib/constants';
 
@@ -64,7 +64,7 @@ export default function Curriculum() {
         <Divider />
         <div style={LogoutContainer}>
           <ListItemButton
-            style={{ position: 'absolute', bottom: '40px' }}
+            style={ListeItemStyle}
             onClick={() => signOut()}
           >
             <ListItemText
@@ -80,6 +80,8 @@ export default function Curriculum() {
     </Box>
   );
 }
+
+const ListeItemStyle: React.CSSProperties = { position: 'absolute', bottom: '40px' };
 
 const listItemFont = { fontSize: '12px' };
 

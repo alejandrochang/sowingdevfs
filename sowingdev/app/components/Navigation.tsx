@@ -8,6 +8,7 @@ const Navigation: React.FC = () => {
   const { status } = useSession();
   const isAuthenticated = status === 'authenticated';
   const isLoading = status === 'loading';
+  const ImageStyle: React.CSSProperties = { borderRadius: '5px' };
 
   return (
     <div className="nav-container">
@@ -21,7 +22,7 @@ const Navigation: React.FC = () => {
                 width={100}
                 height={100}
                 alt="Sowing Dev Logo"
-                style={{ borderRadius: '5px' }}
+                style={ImageStyle}
               />
             </a>
           </div>

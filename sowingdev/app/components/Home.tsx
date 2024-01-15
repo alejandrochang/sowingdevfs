@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import SowingDevLogo from '../img/SowingDevBlack.png';
 import AuthorPic from '../img/meImg.png';
+import { CSSProperties } from 'react';
 
 const Home: React.FC = () => {
+  const ImageStyle: CSSProperties = { marginRight: '20px' };
   return (
     <div className="main-container">
       <section className="bg-primary" id="what_is_sowing_dev">
@@ -54,7 +56,7 @@ const Home: React.FC = () => {
             <div className="col-sm-12">
               <div className="pull-left mb-xs-24">
                 <Image
-                  style={{ marginRight: '20px' }}
+                  style={ImageStyle}
                   className="inline-block image-small"
                   src={AuthorPic}
                   width={75}
