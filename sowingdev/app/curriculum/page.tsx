@@ -14,6 +14,7 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
+  ListItemIcon,
 } from '@mui/material';
 import Content from './Content';
 
@@ -50,9 +51,10 @@ export default function Curriculum() {
       >
         <Divider />
         <List sx={{ padding: '8px 20px 8px 20px' }}>
-          {navigationitems.map(({ text }, index) => (
+          {navigationitems.map(({ text, icon }, index) => (
             <ListItem key={text} disablePadding onClick={handleNavChange}>
               <ListItemButton>
+                <ListItemIcon style={{ minWidth: '30px'}}>{icon}</ListItemIcon>
                 <ListItemText
                   primary={text}
                   primaryTypographyProps={listItemFont}
@@ -63,10 +65,7 @@ export default function Curriculum() {
         </List>
         <Divider />
         <div style={LogoutContainer}>
-          <ListItemButton
-            style={ListeItemStyle}
-            onClick={() => signOut()}
-          >
+          <ListItemButton style={ListeItemStyle} onClick={() => signOut()}>
             <ListItemText
               primary="Logout"
               primaryTypographyProps={listItemFont}
@@ -81,7 +80,13 @@ export default function Curriculum() {
   );
 }
 
-const ListeItemStyle: React.CSSProperties = { position: 'absolute', bottom: '40px' };
+const ListeItemStyle: React.CSSProperties = {
+  position: 'absolute',
+  bottom: '55px',
+  width: '100%',
+  backgroundColor: '#ff5a5a',
+  color: '#ffffff',
+};
 
 const listItemFont = { fontSize: '12px' };
 
