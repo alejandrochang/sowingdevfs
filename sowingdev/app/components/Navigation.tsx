@@ -48,7 +48,7 @@ const Navigation: React.FC = () => {
                     </li>
                   </>
                 )}
-                {isAuthenticated && !isLoading && (
+                {!isAuthenticated && !isLoading && (
                   <li>
                     <a href="/curriculum">Curriculum</a>
                   </li>

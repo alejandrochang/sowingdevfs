@@ -9,7 +9,7 @@ const Javascript: React.FC<JavascriptProps> = (props) => {
 
   return (
     <div>
-      HTML and CSS
+      Javascript
     </div>
   );
 };
