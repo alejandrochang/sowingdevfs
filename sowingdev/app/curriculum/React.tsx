@@ -34,8 +34,6 @@ const ReactComponent: React.FC<ReactProps> = (props) => {
   </head>
   <body>
     <div id="root"></div>
-    <script type="text/babel">
-      // App component
       class App extends React.Component {
       Render() {
           return (
@@ -46,7 +44,6 @@ const ReactComponent: React.FC<ReactProps> = (props) => {
           );
         }
       }
-      // Render the App component
       ReactDOM.render(<App>, document.getElementById("root"));
   </script>
   </body>
