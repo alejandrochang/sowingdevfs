@@ -2,7 +2,7 @@ import React from 'react';
 import { CopyBlock, dracula } from 'react-code-blocks';
 
 
-const CodeBlock: React.FC<{code:any}> = ({code}: {code: any}) => {
+const CodeBlock: React.FC<{code:string}> = ({code}: {code: string}) => {
     return(
         <div>
             <CopyBlock

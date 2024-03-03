@@ -7,7 +7,18 @@ interface ReactProps {
 const ReactComponent: React.FC<ReactProps> = (props) => {
   // Implement the component logic here
 
-    const content = [
+
+  function WhiteSpaceBrake() {
+    return(
+      <div style={{ whiteSpace: 'pre-line'}}>
+        this should work now
+        because
+        yes.
+      </div>
+    )
+  }
+
+    const ReactHeaderInfo = [
       "Understanding React:",
       "",
       "Are you curious about web development and want to understand how modern websites are built? React is a popular JavaScript library that makes building user interfaces easier and more efficient. Here, we'll explore React in simple terms and provide code examples to help you grasp its concepts.",
@@ -50,7 +61,7 @@ const ReactComponent: React.FC<ReactProps> = (props) => {
   </html>
     `;
     
-    const content2 = [
+    const ReactExplained  = [
       '',
       '',
       '',
@@ -69,7 +80,8 @@ const ReactComponent: React.FC<ReactProps> = (props) => {
       "",
       "",
       "",
-      "",
+      "", 
+      // Use style to brake the lines without making use of "" to make it clean 
       "",
       "",
       "",
@@ -77,11 +89,12 @@ const ReactComponent: React.FC<ReactProps> = (props) => {
     ]
   
   return (
+
     <div>
        React
        <br />
        <br />
-      {content.map((item, index) => {
+      {ReactHeaderInfo.map((item, index) => {
         return(
           <>
           {item} <br /> 
@@ -98,13 +111,14 @@ const ReactComponent: React.FC<ReactProps> = (props) => {
        theme={dracula}
        />
 
-      {content2.map((item, index) => {
+      {ReactExplained.map((item, index) => {
         return(
           <>
           {item} <br /> 
           </>
 
         );
+        
       }
       )
       }
