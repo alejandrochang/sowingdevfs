@@ -1761,6 +1761,7 @@ ol ol {
 
   .col-sm-12 {
     width: 100%;
+    margin-bottom: 12px;
   }
 
   .col-sm-11 {

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import SowingDevLogo from '../img/SowingDevBlack.png';
-import AuthorPic from '../img/meImg.png';
+import AuthorPic from '../img/me2.jpg';
 import { CSSProperties } from 'react';
 
 const Home: React.FC = () => {
@@ -21,23 +21,21 @@ const Home: React.FC = () => {
                 community. Our mentorship program is more than just a resource;
                 its a nurturing ground for beginner, junior and aspiring
                 developers looking to cultivate their skills and thrive in the
-                world of technology.
+                world of software engineering.
                 <br />
                 <br />
                 In a rapidly evolving industry, finding the right path can be
-                challenging. Our mentorship program is here to provide guidance,
-                support, and the resources you need to begin your career journey
-                successfully.
+                challenging and finding the right mentor can be even more daunting.
+                Our mentorship program tailors to the need of the student to ensure
+                their sucess in the field.
                 <br />
                 <br />
                 Our mentorship is about sowing the seeds of knowledge,
                 innovation, and collaboration, and reaping the rewards of
                 personal and professional growth. Its an opportunity to network,
                 learn, and give back to the tech community while fostering
-                lasting relationships with fellow developers. Explore our
-                program, discover how SowingDev can make a difference in your
-                career, and join us on this exciting journey of sowing,
-                nurturing, and growing together.
+                lasting relationships with fellow developers. Interested in being 
+                the best developer you can be? Join us at SowingDev and lets grow together!
                 <br />
                 <br />
               </p>
@@ -48,7 +46,7 @@ const Home: React.FC = () => {
           <div className="row pt120 pt-xs-80">
             <div className="col-sm-12">
               <h4 className="uppercase mb30 mb-xs-24">
-                About Me: Meet your Mentor
+                Meet your Mentor
               </h4>
             </div>
           </div>
@@ -73,12 +71,11 @@ const Home: React.FC = () => {
           <div className="row">
             <div className="col-md-4 col-sm-5">
               <p className="fade-half">
-                Hello, Im Alejandro Chang, your dedicated mentor, and Im
+                Hey there! My name is Alejandro Chang, your dedicated mentor, and Im
                 thrilled to be your guide on your journey to growing as a web
-                developer. With over 5 years of experience in the field, Im here
-                to share my knowledge and expertise in JavaScript, React,
-                Node.js, Next.js among other technologies and the foundational
-                principles of full-stack web development.
+                developer. With over 6 years of experience in the field, Im here
+                to share my knowledge and expertise in Full Stack Developmennt, Frontend 
+                Engineering and Backend Technologies.
               </p>
             </div>
             <div className="col-md-4 col-sm-5">
@@ -89,7 +86,8 @@ const Home: React.FC = () => {
                 from crafting responsive front-end user interfaces to
                 architecting robust back-end systems. My expertise spans the
                 entire web development spectrum, and Im particularly
-                enthusiastic about the technologies youre eager to explore.
+                enthusiastic about not only growing you technically but hollistically
+                as an engineer.
               </p>
             </div>
           </div>
@@ -104,35 +102,23 @@ const Home: React.FC = () => {
                 Heres what you can expect from our mentorship journey:
               </p>
               <p className="lead fade-half mb40 mb-xs-24">
-                JavaScript Mastery: JavaScript is the backbone of modern web
-                development, and Im here to help you understand it inside out.
-                Together, well explore the languages intricacies, from the
-                basics to advanced topics.
+                - 1:1 Meetings: Mentorship is built on trust and relationship. There is no 
+                better way to build a mentorship program than to have 1:1 meetings with mentees to understand
+                your blockers, needs and see where I can aid. Whether this is meeting via zoom or at a coffee shop, my goal here is to get to know you
+                and help you grow as a developer.
               </p>
               <p className="lead fade-half mb40 mb-xs-24">
-                React Brilliance: React has revolutionized the way we build user
-                interfaces. Ill guide you through the process of creating
-                dynamic and interactive web applications using this powerful
-                library.
+               - Interview Prep: For those looking for new roles, or getting their foot in the door of the software world
+               we will go through interview prep. This entails, breaking down the what the interview process in todays
+               world looks like, ignoring the noise of so many things to learn, focusing on the highest Return on investments
+               for you that will produce results in ultimately a job offer. From curating your LinkedIn, resume building to 
+               mock interviews and whiteboarding sessions, we will get you ready for the next step in your career.
               </p>
               <p className="lead fade-half mb40 mb-xs-24">
-                Node.js and Beyond: Understanding server-side development is key
-                to building full-stack applications. Well dive into Node.js, its
-                ecosystem, and how it fits into the broader web development
-                landscape and understanding APIs at a fundamental level.
-              </p>
-              <p className="lead fade-half mb40 mb-xs-24">
-                Next.js Expertise: Next.js is the future of web development,
-                providing a powerful framework for building performant and
-                SEO-friendly applications. Ill help you harness its
-                capabilities.
-              </p>
-              <p className="lead fade-half mb40 mb-xs-24">
-                Full-Stack Fundamentals: To excel in web development, its
-                essential to grasp the fundamentals of both front-end and
-                back-end and maybe even a little mobile development. Ill provide
-                you with a comprehensive understanding of the full-stack, from
-                databases to deployment.
+                - Technology DeepDives: Depending on your stack and what youre trying to level up on we will go through deep dives.
+                This could entail breaking down complex algorithms, going thorugh a system design round, building a side-project from
+                scratch. The goal here is to get you to understand the technology you are working with and how to apply it in the real world.
+                Whether its improving at your current position or preparing you for your dream role, we will create a curated plan to help you achieve it.
               </p>
             </div>
           </div>
