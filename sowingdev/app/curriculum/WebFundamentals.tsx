@@ -1,17 +1,17 @@
 import React from 'react';
 
-interface WebFundamentalsProps {
+interface ResumeReviewProps {
   // Define the props for the component here
 }
 
-const WebFundamentals: React.FC<WebFundamentalsProps> = (props) => {
+const ResumeReview: React.FC<ResumeReviewProps> = (props) => {
   // Implement the component logic here
 
   return (
     <div>
-      WebFundamentals
+      Resume Review
     </div>
   );
 };
 
-export default WebFundamentals;
+export default ResumeReview;

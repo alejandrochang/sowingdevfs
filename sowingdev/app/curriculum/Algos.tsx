@@ -1,17 +1,17 @@
 import React from 'react';
 
-interface ReactProps {
+interface AlgoProps {
   // Define the props for the component here
 }
 
-const ReactComponent: React.FC<ReactProps> = (props) => {
+const Algorithms: React.FC<AlgoProps> = (props) => {
   // Implement the component logic here
 
   return (
     <div>
-      React Content
+      Algorithms
     </div>
   );
 };
 
-export default ReactComponent;
+export default Algorithms;

@@ -1,11 +1,9 @@
 import React, { CSSProperties } from 'react';
 import Overview from './Overview';
-import ReactComponent from './React';
-import Javascript from './Javascript';
-import FETechnologies from './FETechnologies';
-import HtmlCss from './HtmlCss';
-import Servers from './Servers';
-import WebFundamentals from './WebFundamentals';
+import Algos from './Algos';
+import Resources from './HtmlCss';
+import InterviewPreparation from './Servers';
+import ResumeReview from './WebFundamentals';
 
 interface ContentProps {
   pageState: string;
@@ -14,25 +12,21 @@ interface ContentProps {
 const Content: React.FC<ContentProps> = ({ pageState }) => {
   const navComponent = () => {
     switch (pageState) {
-      case 'React':
-        return <ReactComponent />;
-      case 'JavaScript':
-        return <Javascript />;
-      case 'Web Fundamentals':
-        return <WebFundamentals />;
-      case 'Servers':
-        return <Servers />;
-      case 'HTML & CSS':
-        return <HtmlCss />;
-      case 'FE Technologies':
-        return <FETechnologies />;
+      case 'Algorithms':
+        return <Algos />;
+      case 'Resume Review':
+        return <ResumeReview />;
+      case 'Interview Preparation':
+        return <InterviewPreparation />;
+      case 'Resources':
+        return <Resources />;
       default:
         return <Overview />;
     }
   };
 
   const Container: CSSProperties = {
-    padding: '30px',
+    padding: '120px',
     backgroundColor: ' #ffffff',
     position: 'relative',
   };

@@ -1,17 +1,17 @@
 import React from 'react';
 
-interface HTMLCSSProps {
+interface ResourcesProps {
   // Define the props for the component here
 }
 
-const HTMLCSS: React.FC<HTMLCSSProps> = (props) => {
+const Resources: React.FC<ResourcesProps> = (props) => {
   // Implement the component logic here
 
   return (
     <div>
-      HTML and CSS
+      Resources
     </div>
   );
 };
 
-export default HTMLCSS;
+export default Resources;

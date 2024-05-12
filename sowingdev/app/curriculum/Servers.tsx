@@ -1,17 +1,17 @@
 import React from 'react';
 
-interface ServersProps {
+interface InterviewPreparationProps {
   // Define the props for the component here
 }
 
-const Servers: React.FC<ServersProps> = (props) => {
+const InterviewPreparation: React.FC<InterviewPreparationProps> = (props) => {
   // Implement the component logic here
 
   return (
     <div>
-      Servers
+      InterviewPreparation
     </div>
   );
 };
 
-export default Servers;
+export default InterviewPreparation;

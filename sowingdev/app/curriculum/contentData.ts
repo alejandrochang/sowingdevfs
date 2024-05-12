@@ -1,55 +1,28 @@
 const listItems = [
   {
-    title: 'Web Fundamentals',
-    content: 'When learning web fundamentals, you would dive into a diverse range of topics that form the cornerstone of web development. These topics encompass the essential building blocks of creating websites and web applications. You would start by understanding the basics of HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) for structuring and styling web content. From there, youd explore JavaScript, the programming language that adds interactivity and dynamic behavior to web pages. Youd also delve into responsive web design to ensure your creations look great on various devices and screen sizes. Additionally, youd learn about web accessibility, SEO (Search Engine Optimization) best practices, and the fundamentals of web hosting and deployment to make your projects accessible to a wider audience. In essence, mastering web fundamentals equips you with the foundational knowledge and skills to build functional, user-friendly, and visually appealing websites and applications.',
-  },
-  {
-    title: 'HTML and CSS',
-    content: 'In our mentorship journey, you will embark on an enriching exploration of two fundamental languages in web development: HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets). With HTML, you will master the art of structuring web content, allowing you to create the backbone of web pages, define headings, paragraphs, lists, and more. Youll understand how to incorporate hyperlinks, images, and multimedia elements, making your web projects engaging and interactive. Meanwhile, CSS will be your tool for styling and visually enhancing your creations. You`ll delve into the intricacies of layout, typography, color schemes, and responsive design, ensuring that your web pages not only function effectively but also look aesthetically pleasing on various devices and screen sizes. Together, we`ll unlock the power of HTML and CSS, enabling you to craft captivating and user-friendly web experiences, setting the stage for your journey into the world of web development.'
-  },
-  {
-    title: 'Programming With JavaScript',
-    content: 'In our mentoring journey, youll embark on an exciting exploration of JavaScript, a dynamic and versatile programming language that forms the backbone of interactive web development. JavaScript is your gateway to enhancing web pages, adding interactivity, and creating responsive user interfaces. Youll start by understanding the fundamental building blocks: variables, data types, and control structures. Well delve into functions, objects, and arrays, unlocking the power of JavaScript for organizing and manipulating data. Youll also learn about event handling, the Document Object Model (DOM), and how to manipulate web content in real-time. As we progress, more advanced topics like asynchronous programming, APIs, and modern JavaScript frameworks will broaden your horizons. By the end of our journey, youll have a strong grasp of JavaScripts capabilities and be well-equipped to build dynamic, feature-rich web applications. Together, well empower you to bring your web development ideas to life through the magic of JavaScript.',
-  },
-  {
-    title: 'Programming with React',
-    content: 'When learning React, you would immerse yourself in a comprehensive set of topics related to this popular JavaScript library for building user interfaces. Starting with the basics, you`d understand React`s core concepts, such as components, state, and props, which form the foundation of React applications. Youd also explore JSX (JavaScript XML) for declaratively defining UI components, enabling a seamless integration of HTML-like syntax into JavaScript. As you progress, you`d dive into managing state and handling events, creating reusable components, and understanding the component lifecycle. Routing and navigation would be crucial, allowing you to build multi-page applications. Additionally, youd learn how to handle data with React through tools like Redux or React Context API. Ultimately, youd gain proficiency in building dynamic, efficient, and interactive web applications using React, making it a valuable skill for modern web development.',
-  },
-  {
-    title: 'Server Technologies',
-    content: 'In our mentorship journey, youre about to embark on an enlightening exploration of server technologies, a critical aspect of modern web development that forms the backbone of dynamic and data-driven applications. Well begin by understanding the fundamentals of server-side programming, where youll become proficient in languages like Node.js and frameworks like Express.js. Youll grasp the art of building robust, scalable, and efficient backend services that handle data processing, authentication, and server-side logic. Well also explore databases, both SQL and NoSQL, as well as query languages like SQL and MongoDB, to store and manage data effectively. Understanding APIs and how to create and consume them will be a crucial part of your journey. Additionally, well cover essential concepts such as RESTful architecture, authentication, and security to ensure your server-side applications are both powerful and secure. By the end of our journey, youll have the knowledge and skills to architect, develop, and deploy server-side applications that serve as the engine driving dynamic web experiences. Together, well navigate the intricate world of server technologies, empowering you to build sophisticated and data-driven web applications with confidence.'
-  },
-  {
-    title: 'FE Technologies',
-    content: 'In our mentoring journey, youre about to embark on an exciting exploration of frontend technologies, a captivating realm that defines the user experiences of the digital world. Well delve deep into the essential components of modern web development, starting with HTML (Hypertext Markup Language) to structure web content and CSS (Cascading Style Sheets) for styling and layout. Youll learn to create visually appealing, responsive, and accessible web interfaces that captivate users. Moving forward, well dive into JavaScript, the dynamic language that adds interactivity and functionality to your web pages. Youll understand its core concepts, DOM manipulation, and asynchronous programming, equipping you to create engaging, dynamic user interfaces. Well also explore popular libraries and frameworks like React, which will empower you to build complex web applications efficiently. By the end of our journey, youll have the knowledge and skills to craft user-friendly, visually stunning, and interactive web experiences that leave a lasting impact. Together, well navigate the exciting world of frontend technologies, arming you with the tools to bring your creative web development visions to life.'
-  },
-  {
     title: 'Algorithms',
-    content: 'content',
+    content:
+      ['Our algorithm mentorship program is designed to provide comprehensive training and support for individuals looking to enhance their algorithmic problem-solving skills. Participants will receive guidance, resources, and hands-on practice to master key algorithms and data structures commonly encountered in technical interviews and real-world software development scenarios. Program Structure: Mentor Matching: Participants will be matched with experienced mentors who will provide personalized guidance tailored to their skill level and learning objectives. Curriculum: The curriculum covers a wide range of topics, including sorting algorithms, searching algorithms, dynamic programming, graph algorithms, and more. Each topic is presented in a structured format with clear explanations, examples, and practice problems.',
+      'Hands-on Practice: Participants will have the opportunity to apply their knowledge through hands-on coding exercises and algorithm challenges. Mentors will provide feedback and guidancse to help participants improve their problem-solving abilities. Mock Interviews: To prepare participants for technical interviews, the program includes mock interviews conducted by experienced mentors. Participants will receive valuable feedback on their performance and tips for improvement.',
+      'Community Support: Participants will have access to a supportive community of peers and mentors who share their passion for algorithmic problem-solving. They can collaborate, share resources, and participate in group discussions to enhance their learning experience. Benefits: Gain a deep understanding of fundamental algorithms and data structures. Improve problem-solving skills and algorithmic thinking. Receive personalized guidance and support from experienced mentors. Prepare effectively for technical interviews at top tech companies. Join a supportive community of like-minded individuals passionate about algorithms and computer science. Our algorithm mentorship program is ideal for students, recent graduates, and professionals seeking to excel in technical interviews, advance their careers in software engineering, or simply deepen their understanding of algorithms and data structures. Join us on a journey of exploration, discovery, and growth as we unlock the secrets of algorithms together.'],
   },
   {
     title: 'Resume Review',
-    content: 'content',
+    content: [
+      'One-on-One Mentorship: Participants will be paired with experienced mentors who will provide personalized guidance and support throughout the resume review process. Mentors will offer insights, recommendations, and constructive feedback to help participants strengthen their resumes. We have seen hundreds and hundres of resumes and have been part of the interview process at top tech companes!',
+      '1. Resume Critique: Mentors will review participants resumes in detail, assessing factors such as formatting, content, structure, and language. They will identify areas for improvement and provide actionable suggestions to optimize the resume for maximum impact.',
+      '2. Tailored Advice: Mentors will work closely with participants to understand their career goals, target roles, and unique strengths. They will tailor their advice to align with participants aspirations and help them highlight relevant skills and experiences effectively.',
+      '3. Resume Optimization: Participants will learn strategies for optimizing their resumes to stand out to recruiters and hiring managers. Mentors will share best practices for showcasing achievements, quantifying accomplishments, and customizing content for specific job applications.',
+      '4. Continuous Support: The mentorship doesnt end with the initial resume review. Participants will have ongoing access to their mentors for follow-up questions, additional feedback, and support as they refine their resumes and pursue career opportunities.'
+    ],
   },
   {
     title: 'Interview Preparation',
-    content: 'content',
-  },
-  {
-    title: 'Intermediate HTML/CSS',
-    content: 'content',
-  },
-  {
-    title: 'Intermediate React',
-    content: 'content',
-  },
-  {
-    title: 'Intermediate Next.js',
-    content: 'content',
-  },
-  {
-    title: 'Advanced Frontend Concepts',
-    content: 'content',
+    content: ['Technical Concepts: Participants will receive instruction on essential technical concepts commonly assessed in software engineering interviews. Topics may include data structures, algorithms, system design, object-oriented programming, and more. Each concept will be explained in detail, with examples and exercises to reinforce understanding.',
+    'Mock Interviews: To simulate real interview scenarios, participants will engage in mock interviews conducted by experienced professionals in the field. These interviews will cover a range of topics and formats, including coding challenges, system design discussions, behavioral questions, and whiteboard exercises. Participants will receive constructive feedback and guidance on their performance to identify strengths and areas for improvement.',
+    'Problem-Solving Strategies: Participants will learn effective problem-solving strategies and techniques for approaching technical challenges with confidence and clarity. They will practice breaking down complex problems, devising efficient solutions, and communicating their thought process effectively during interviews.',
+    'Coding Practice: Hands-on coding practice is an essential component of interview preparation. Participants will have the opportunity to solve a variety of coding problems, ranging from easy to difficult, to sharpen their coding skills and improve their problem-solving speed and accuracy.',
+    'Soft Skills Development: In addition to technical proficiency, soft skills such as communication, teamwork, and professionalism are crucial for interview success. Participants will receive guidance on developing these skills and learn how to articulate their experiences and accomplishments effectively to potential employers']
   },
 ];
 
