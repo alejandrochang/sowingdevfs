@@ -38,7 +38,7 @@ const Navigation: React.FC = () => {
                 <li>
                   <a href="/#contact">Contact</a>
                 </li>
-                {!isAuthenticated && !isLoading && (
+                {/* {!isAuthenticated && !isLoading && (
                   <>
                     <li>
                       <a href="/signup">Signup</a>
@@ -47,12 +47,12 @@ const Navigation: React.FC = () => {
                       <a href="/signin">{'Login'}</a>
                     </li>
                   </>
-                )}
-                {isAuthenticated && !isLoading && (
+                )} */}
+                {/* {isAuthenticated && !isLoading && (
                   <li>
                     <a href="/curriculum">Curriculum</a>
                   </li>
-                )}
+                )} */}
               </ul>
             </div>
           </div>

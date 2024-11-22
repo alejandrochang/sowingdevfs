@@ -407,6 +407,7 @@ ul.lead li {
 /*!---------- 4. COLOURS ----------*/
 .bg-primary {
   background: #525a60 !important;
+  padding-bottom: 0;
 }
 
 .bg-dark {

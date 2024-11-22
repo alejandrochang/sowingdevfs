@@ -1,14 +1,32 @@
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import SowingDevLogo from '../img/sowingDevWhite.png';
-import AuthorPic from '../img/meImg.png';
-import { CSSProperties } from 'react';
+import AuthorPic from '../img/linkedInme.jpg';
 
 const Home: React.FC = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+      };
+
+      handleResize(); // Check on initial render
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+
+  const paddingTop = isMobile ? 'pt80' : 'pt120';
   return (
     <div className="main-container">
       <section className="bg-primary" id="what_is_sowing_dev">
         <div className="container">
-          <div className="pt120">
+          <div className={paddingTop}>
             <h4 className="uppercase mb40 mb-xs-24">What is Sowing Dev?</h4>
           </div>
           <div className="row pt">
